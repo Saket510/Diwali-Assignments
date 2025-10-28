@@ -6,14 +6,11 @@ public class Employee implements Comparable<Employee>,Serializable {
 	private int empId;
 	private String eName;
 	private String empRole;
-	
-	
-	//Default Constructor
+
 	public Employee() {
 		super();
 	}
-	
-	//Parameterized Constructor 
+
 	public Employee(int empId, String eName, String empRole) {
 		super();
 		this.empId = empId;
@@ -26,8 +23,6 @@ public class Employee implements Comparable<Employee>,Serializable {
 		this.eName = eName;
 		this.empRole = "HR";
 	}
-	
-	//getter and Setter
 
 	public Employee(int eid) {
 		this.empId = eid;
