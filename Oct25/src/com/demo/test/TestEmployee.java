@@ -27,7 +27,7 @@ public class TestEmployee {
 			
 			
 				switch(ch) {
-					//-------------------------Add Employeee-------------------------------------------
+			
 						case 1 ->{
 							boolean flag = eservice.addNewEmployee();
 							
@@ -38,8 +38,7 @@ public class TestEmployee {
 									System.out.println("Error!! Try Again!!");
 								}
 							}
-						
-					//--------------------------remove Employee----------------------
+
 						case 2 -> {
 								System.out.println("Enter the Employee Id : ");
 								int eid = sc.nextInt();
@@ -52,15 +51,13 @@ public class TestEmployee {
 								}
 						}
 						
-					//--------------------------Show Employee-----------------------	
 						case 3 -> {
 							List<Employee> e = eservice.showAll();
 							
 							e.forEach(System.out::println);
 							
 						}
-						
-					//---------------------Sort by Emp Id------------------------------------------
+
 						case 4 -> {
 								List<Employee> slst = eservice.sortById();
 								if(slst != null) {
@@ -71,8 +68,7 @@ public class TestEmployee {
 								}
 							
 						}
-						
-					//-------------------Find By Name----------------
+
 						case 5 ->{
 							System.out.println("Enter the Employee Name : ");
 							String name = sc.next();
@@ -85,8 +81,7 @@ public class TestEmployee {
 								System.out.println("Employee Not Found!!!");
 							}
 						}
-						
-					//---------------------Save File-------------------------------
+	
 						case 6 ->{
 							eservice.saveFile("EmpData.txt");
 							
