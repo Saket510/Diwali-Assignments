@@ -32,10 +32,10 @@ public class TestEmployee {
 							boolean flag = eservice.addNewEmployee();
 							
 							if(flag) {
-									System.out.println("EMployee Added Successfully!!");
+									System.out.println("EMployee Added Successfully");
 								}
 							else {
-									System.out.println("Error!! Try Again!!");
+									System.out.println("Error!! Try Again");
 								}
 							}
 
@@ -47,7 +47,7 @@ public class TestEmployee {
 									System.out.println("Employee Data Deleted Successfully!!");
 								}
 								else {
-									System.out.println("Not Found!!");
+									System.out.println("Not Found!");
 								}
 						}
 						
@@ -64,7 +64,7 @@ public class TestEmployee {
 									slst.forEach(System.out::println);
 								}
 								else {
-									System.out.println("List Is Empty!!!");
+									System.out.println("List Is Empty");
 								}
 							
 						}
@@ -78,18 +78,18 @@ public class TestEmployee {
 								
 							}
 							else {
-								System.out.println("Employee Not Found!!!");
+								System.out.println("Employee Not Found");
 							}
 						}
 	
 						case 6 ->{
 							eservice.saveFile("EmpData.txt");
 							
-							System.out.println("Thank you for visiting......");
+							System.out.println("Thank you for visit");
 						}
 						
 						case 7->{
-							System.out.println("Thank You!!!");
+							System.out.println("Thanks");
 							sc.close();
 						}
 				}
