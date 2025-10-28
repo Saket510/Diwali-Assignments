@@ -11,7 +11,7 @@ public class EvenOdd {
 		int sum=0;
 		for(int i=1;i<=n;i++)
 		{
-			sum= sum + i*2;//imp
+			sum= sum + i*2;
 		}
 		
 		System.out.println("Sum of first n even number is "+ sum);
