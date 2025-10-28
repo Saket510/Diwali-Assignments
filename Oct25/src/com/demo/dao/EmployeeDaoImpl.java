@@ -78,10 +78,10 @@ public class EmployeeDaoImpl implements EmployeeDao{
 				oos.writeObject(e);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}catch (IOException e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		}
 		
